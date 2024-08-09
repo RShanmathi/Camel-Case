@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String a=s.nextLine();
+        String cc="";
+        String[] b=a.split(" ");
+        for(String word:b){
+            String cw=word.substring(0,1).toUpperCase()+word.substring (1).toLowerCase();
+            cc+=cw;
+        }
+        System.out.println(cc);
+    }
+}
